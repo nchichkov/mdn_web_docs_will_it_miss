@@ -1,0 +1,40 @@
+{
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": [
+    "react"
+  ],
+  "scripts":{
+    "build": "parcel build src/index.html"
+  },
+  "rules": {
+    "semi": "error",
+    "no-console": 0,
+    "react/jsx-uses-vars": "error"
+  },
+  "devDependencies": {
+    "eslint-plugin-react": "^7.24.0",
+    "parcel-bundler": "^1.12.5",
+    "postcss-preset-env": "^6.7.0"
+  },
+  "dependencies": {
+    "date-fns": "^2.22.1",
+    "format-number": "^3.0.0",
+    "react": "^17.0.2",
+    "react-async-hook": "^3.6.2",
+    "react-dom": "^17.0.2"
+  }
+}
